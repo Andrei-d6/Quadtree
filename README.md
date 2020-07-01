@@ -2,17 +2,15 @@
 
 An application that uses quadtrees for compression, decompression, mirroring and overlaying ppm pictures.
 
----
-
 # Idea
 
-For the purpose of this program the images are considered to be sqared with a width and height equal to a power of 2.
+For the purpose of this program the images are considered to be squared with a width and height equal to a power of 2.
 
 The root of the tree represents a squre and the 4 children of the root correspond to the 4 squares that make up the entire image.
 
 <img src="Imagini/README_Images/quadtree1.png" />
 
-As long as a child does not contain pixels with a mean color below a certain threshold, it can not represent a leaf node and therefor it has to be split up into another 4 nodes.
+As long as a child does not contain pixels with a mean color below a certain threshold, it can not represent a leaf node and therefore it has to be split up into another 4 nodes.
 We repeat this idea unit all the leaf nodes have pixels with a mean color that corresponds to the selected compression threshold.
 
 The mean color of the pixels is calculated using the following formula
@@ -92,6 +90,8 @@ Example:
 ./quadtree -d binary.out new_MOnalisa.ppm
 ```
 
+---
+
 ## Flip Image
 
 Flips an image horizontally or vertically.
@@ -133,6 +133,8 @@ Example:
   <img src="Imagini/README_Images/MOnalisa.png" width="200" />
   <img src="Imagini/README_Images/v_MOnalisa.png" width="200" />
 </p>
+
+---
 
 ## Overlay two images
 
