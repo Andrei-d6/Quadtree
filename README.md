@@ -29,7 +29,7 @@ make
 
 # Uses
 
-## Compressing an image with compressed image as output.
+## Compressing an image into image format.
 
 Takes an image and creates a new version of that image that will be compressed.
 
