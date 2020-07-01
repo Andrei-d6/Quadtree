@@ -6,7 +6,7 @@ An application that uses quadtrees for compression, decompression, mirroring and
 
 For the purpose of this program the images are considered to be squared with a width and height equal to a power of 2.
 
-The root of the tree represents a squre and the 4 children of the root correspond to the 4 squares that make up the entire image.
+The root of the tree represents a square and the 4 children of the root correspond to the 4 squares that make up the entire image.
 
 <img src="Imagini/README_Images/quadtree1.png" />
 
@@ -58,7 +58,7 @@ Example:
 
 ## Compressing an image into binary format
 
-Compressed given image intro a binary format that can later be decompressed by the program.
+Compress given image into a binary format that can later be decompressed by the program.
 
 Command:
 
